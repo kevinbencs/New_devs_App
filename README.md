@@ -22,3 +22,5 @@ backend-1   | Database error for prop-001 (tenant: tenant-b): Database pool not 
 backend-1   | {'property_id': 'prop-001', 'tenant_id': 'tenant-b', 'total': '1000.00', 'currency': 'USD', 'count': 3}
 backend-1   | id='user-ocean' email='ocean@propertyflow.com' permissions=[] cities=[] is_admin=False tenant_id='tenant-b'
 `
+
+Fixed the database connection error in `reservation.py` and `database_v2.py`.
