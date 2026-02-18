@@ -86,7 +86,11 @@ async def calculate_total_revenue(property_id: str, tenant_id: str) -> Dict[str,
             raise Exception("Database pool not available")
             
     except Exception as e:
+
         print(f"Database error for {property_id} (tenant: {tenant_id}): {e}")
+        import traceback
+        traceback.print_exc()
+        #print(f"Database error for {property_id} (tenant: {tenant_id}): {e}")
         
         # Create property-specific mock data for testing when DB is unavailable
         # This ensures each property shows different figures

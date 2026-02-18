@@ -120,6 +120,7 @@ export async function signOut() {
     try {
         const { error } = await supabase.auth.signOut();
         if (error) throw error;
+        
     } catch (error: any) {
         console.error("Sign out error:", error);
         throw error;

@@ -136,6 +136,7 @@ class LocalAuthClient {
       }
 
       this.saveSession(null);
+      
 
       return { error: null };
     } catch (error: any) {
